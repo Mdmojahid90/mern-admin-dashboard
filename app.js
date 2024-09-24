@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000
 const cors = require("cors")
 
 const corsOption= {
-  origin:"http://localhost:5173",
+  origin:process.env.BASE_URL,
   method:"POST ,GET ,DELETE ,PATCH",
   Credential:true
 }
